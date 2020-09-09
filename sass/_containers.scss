@@ -1,0 +1,54 @@
+.row{
+  @include dimension(100%,auto);
+}
+
+.clearfix::after{
+  clear:both;
+  display: table;
+  content:"";
+}
+
+.col{
+  float:left;
+}
+.col-1{
+  width: 100%/12*1;
+}
+.col-2{
+  width: 100%/12*2;
+}
+.col-3{
+  width: 100%/12*3;
+}
+
+.col-5{
+  width: 100%/12*5;
+}
+
+.col-7{
+  width: 100%/12*7;
+}
+
+.col-9{
+  width: 100%/12*9;
+}
+.col-10{
+  width: 100%/12*10;
+}
+.col-11{
+  width: 100%/12*11;
+}
+.col-12{
+  width: 100%/12*12;
+}
+
+.banner{
+  background: $primary;
+  
+
+}
+
+.top-nav{
+  background: $secondary;
+
+}
