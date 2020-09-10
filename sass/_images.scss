@@ -1,0 +1,24 @@
+@import 'mixins';
+
+//--------------------------------------------------------------
+
+.horiTOQ{
+  @include w-h(auto, 111px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cartIcon{
+  @include w-h(auto, 70px);
+  margin-left: 50%;
+}
+
+.bellIcon{
+  @include w-h(auto, 70px);
+}
+
+.food_image{
+  @include w-h(100%, auto);
+}

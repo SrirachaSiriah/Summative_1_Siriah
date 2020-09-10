@@ -1,4 +1,4 @@
-@mixin dimension($w,$h){
+@mixin w-h($w,$h){
   width: $w;
   height: $h;
 }

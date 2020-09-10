@@ -1,11 +1,12 @@
 .row{
-  @include dimension(100%,auto);
+  width:100%;
+  height: auto;
 }
 
-.clearfix::after{
+.row::after{
   clear:both;
-  display: table;
-  content:"";
+  display: block;
+  content: "";
 }
 
 .col{
@@ -20,9 +21,15 @@
 .col-3{
   width: 100%/12*3;
 }
-
+.col-4{
+  width: 100%/12*4;
+}
 .col-5{
   width: 100%/12*5;
+}
+
+.col-6{
+  width: 100%/12*6;
 }
 
 .col-7{
@@ -40,15 +47,4 @@
 }
 .col-12{
   width: 100%/12*12;
-}
-
-.banner{
-  background: $primary;
-  
-
-}
-
-.top-nav{
-  background: $secondary;
-
 }
