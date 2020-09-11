@@ -22,3 +22,15 @@
 .food_image{
   @include w-h(100%, auto);
 }
+
+.allergen_key{
+  @include w-h(auto, 173px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.diet_logo{
+  @include w-h(auto, 20px);
+}
