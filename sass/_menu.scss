@@ -56,3 +56,26 @@
 .food_details{
   margin: 10px 0;
 }
+
+.review_order_button{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: $bodycopy;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $secondary;
+  color: $background;
+  display:inline-block;
+  border: none;
+  padding: 12px 28px;
+}
+
+.button_div{
+  position: relative;
+  height: 200px;
+}

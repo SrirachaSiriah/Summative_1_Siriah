@@ -2,10 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <link rel="stylesheet" href="https://use.typekit.net/ews1msb.css">
     <link rel="stylesheet" href="https://use.typekit.net/ews1msb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css"
+    integrity="sha512-SsJq+mF6SR+NR5GizgVCURD39dLfHZg2MOJE5eoGUj0pm3Mcz0uxo370pC83L7+hnrxhXkcZeOcSOJrj0rULaA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 
     <title>The Old Quarter</title>
@@ -16,21 +21,21 @@
       <!-------------------------------------------------------------->
       <!-- Banner  -->
 
-      <div class="bannerDiv">
+      <div class="bannerDiv col-12">
           <img class="horiTOQ" src="images/toq-tag-horizontal.png" alt="horizontalTOQ">
       </div>
 
       <!-------------------------------------------------------------->
       <!-- Navigation Menu -->
 
-        <nav class="top_nav">
+        <nav class="top_nav col-12">
 
           <ul class="top_nav_container row">
-            <li class="top_nav_list col col-2"><a id="entreesID" class="top_nav_link" href="#entrees">Entrees</a></li>
-            <li class="top_nav_list col col-2"><a id="mainsID" class="top_nav_link" href="#mains">Mains</a></li>
-            <li class="top_nav_list col col-2"><a id="drinksID" class="top_nav_link" href="#drinks">Drinks</a></li>
-            <li class="top_nav_list col col-2"><a id="specialsID" class="top_nav_link" href="#specials">Specials</a></li>
-            <li class="top_nav_list col col-2"> <img class="cartIcon" src="images/Cart.png" alt="Cart"> </li>
+            <li id="entrees" class="top_nav_list col col-2"> Entrees </li>
+            <li id="mains" class="top_nav_list col col-2"> Mains </li>
+            <li id="drinks" class="top_nav_list col col-2"> Drinks </li>
+            <li id="specials" class="top_nav_list col col-2"> Specials </li>
+            <li id="cart" class="top_nav_list col col-2"> <img class="cartIcon" src="images/Cart.png" alt="Cart"> </li>
             <li class="top_nav_list col col-2"> <img class="bellIcon" src="images/Assistance_Bell.png" alt="Cart"> </li>
           </ul>
 
@@ -39,7 +44,7 @@
 <!------------------------------------------------------------------------------>
 <!-- Entrees Page -->
 
-<section id="entreesSection">
+<section class="entrees">
 
 <div class="entreesPage">
 
@@ -364,8 +369,8 @@
 
             <div class="dietary_ind col col-6">
                 <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
-                <img class="diet_logo" src="images/V.svg" alt="Dairy Free">
-                <img class="diet_logo" src="images/VG.svg" alt="Dairy Free">
+                <img class="diet_logo" src="images/V.svg" alt="Vegan">
+                <img class="diet_logo" src="images/VG.svg" alt="Vegetarian">
             </div>
 
             <div class="dietary_ind col col-6">
@@ -466,7 +471,8 @@
 
             <div class="dietary_ind col col-6">
                 <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
-                <img class="diet_logo" src="images/GF.svg" alt="Gluten Free">
+                <img class="diet_logo" src="images/V.svg" alt="Vegan">
+                <img class="diet_logo" src="images/VG.svg" alt="Vegetarian">
             </div>
 
             <div class="dietary_ind col col-6">
@@ -491,13 +497,42 @@
 
     <img class="food_image" src="images/placeholder.svg" alt="Food">
 
-      <h1 class="food_name">Vegetable Dumplings</h1>
+      <h1 class="food_name">Pork Pot Sticker Dumplings</h1>
 
         <div class="row food_details">
 
             <div class="dietary_ind col col-6">
                 <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
-                <img class="diet_logo" src="images/GF.svg" alt="Gluten Free">
+            </div>
+
+            <div class="dietary_ind col col-6">
+                <h2 class="food_price">$17.00</h2>
+            </div>
+
+        </div>
+
+            <div class="line"></div>
+
+            <div class="food_description">
+              <p>Pork, chives, cabbae & ginger grilled dumplings
+                with chilli soy sauce.</p>
+            </div>
+
+  </div>
+
+<!------------------------------------------------------------------------------>
+<!-- Chicken and Shiitake Dumplings -->
+
+<div class="food_item col col-4">
+
+    <img class="food_image" src="images/placeholder.svg" alt="Food">
+
+      <h1 class="food_name">Chicken & Shiitake Dumplings</h1>
+
+        <div class="row food_details">
+
+            <div class="dietary_ind col col-6">
+                <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
             </div>
 
             <div class="dietary_ind col col-6">
@@ -509,17 +544,190 @@
             <div class="line"></div>
 
             <div class="food_description">
-              <p>Sweetcorn, beans, mushrooms & garlic
-                  with red vinegar sauce.</p>
+              <p>Black bean & hoisin chilli sauce.</p>
             </div>
 
   </div>
 
+<!------------------------------------------------------------------------------>
+<!-- Fifth row ends here -->
+
+</div>
+
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!-- Sixth row starts here -->
+
+<div class="row">
+
+<!------------------------------------------------------------------------------>
+<!-- Twice Cooked Spare Ribs -->
+
+<div class="food_item col col-4">
+
+    <img class="food_image" src="images/placeholder.svg" alt="Food">
+
+      <h1 class="food_name">Twice Cooked Spare Ribs</h1>
+
+        <div class="row food_details">
+
+            <div class="dietary_ind col col-6">
+                <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
+                <img class="diet_logo" src="images/GF.svg" alt="Gluten Free">
+            </div>
+
+            <div class="dietary_ind col col-6">
+                <h2 class="food_price">$19.00</h2>
+            </div>
+
+        </div>
+
+            <div class="line"></div>
+
+            <div class="food_description">
+              <p>Glazed with sweet & sour honey sauce.</p>
+            </div>
+
+  </div>
+
+  <!------------------------------------------------------------------------------>
+  <!-- Black Tiger Prawn Cutlets -->
+
+  <div class="food_item col col-4">
+
+      <img class="food_image" src="images/placeholder.svg" alt="Food">
+
+        <h1 class="food_name">Black Tiger Prawn Cutlets</h1>
+
+          <div class="row food_details">
+
+              <div class="dietary_ind col col-6">
+                  <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
+                  <img class="diet_logo" src="images/GF.svg" alt="Gluten Free">
+              </div>
+
+              <div class="dietary_ind col col-6">
+                  <h2 class="food_price">$19.00</h2>
+              </div>
+
+          </div>
+
+              <div class="line"></div>
+
+              <div class="food_description">
+                <p>Coated in young green rice,
+                  served with kimchi mayonnaise.</p>
+              </div>
+
+    </div>
+
+    <!------------------------------------------------------------------------------>
+    <!-- Cashew Peking Duck -->
+
+    <div class="food_item col col-4">
+
+        <img class="food_image" src="images/placeholder.svg" alt="Food">
+
+          <h1 class="food_name">Cashew Peking Duck</h1>
+
+            <div class="row food_details">
+
+                <div class="dietary_ind col col-6">
+                    <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
+                </div>
+
+                <div class="dietary_ind col col-6">
+                    <h2 class="food_price">$16.00</h2>
+                </div>
+
+            </div>
+
+                <div class="line"></div>
+
+                <div class="food_description">
+                  <p>With coriander, spring onion,
+                    lemongrass & hoisin chilli sauce.</p>
+                </div>
+
+      </div>
+
+<!------------------------------------------------------------------------------>
+<!-- Sixth row ends here -->
+
+</div>
+
+<!------------------------------------------------------------------------------>
+<!-- Review Order Button -->
+<div class="button_div">
+<button class="review_order_button">Review your order</button>
+</div>
+
+<!------------------------------------------------------------------------------>
 
 
+<!------------------------------------------------------------------------------>
+<!-- Entrees Section Ends Here -->
 
 </section>
 
+<!------------------------------------------------------------------------------>
+
+<section class="mains">
+
+  <header> Mains </header>
+
+</section>
+
+<!------------------------------------------------------------------------------>
+
+<section class="drinks">
+
+  <header> Drinks </header>
+
+</section>
+
+<!------------------------------------------------------------------------------>
+
+<section class="specials">
+
+  <header> Specials </header>
+
+</section>
+
+<!------------------------------------------------------------------------------>
+
+<section class="cart">
+
+  <header> Cart </header>
+
+</section>
+
+<!------------------------------------------------------------------------------>
+<!-- Footer -->
+
+<div class="footer_div col-12">
+
+<a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+<header class="footer_header"> Back to the top </header>
+
+</div>
+
+
+
+
+
+
+<!------------------------------------------------------------------------------>
+<!-- Scripts Go Here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</script>
+
+<!------------------------------------------------------------------------------>
 
     </body>
 </html>

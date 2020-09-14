@@ -3,10 +3,10 @@
   height: $h;
 }
 
+
 @mixin font_formatting($bc, $s, $w, $c){
   font-family: $bc;
   font-size: $s;
   font-weight: $w;
   color: $c;
-
 }
