@@ -1,81 +1,85 @@
 @import 'mixins';
 
 //--------------------------------------------------------------
+@media screen and (min-width: 760px){
+
+  .TOQLogo{
+    display: none;
+  }
+
+  .allergenMob{
+    display: none;
+  }
+
+  .allergenTab{
+    position: relative;
+    height: 160px;
+  }
+
+  .food_item{
+    padding: 30px;
+  }
+
+  .food_price{
+    text-align: right;
+    @include font_formatting($bodycopy,18px,bold,$secondary);
+  }
+
+  .food_menu_name{
+    @include font_formatting($bodycopy,60px,bold,$primary);
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0;
+  }
+
+  .food_category{
+    @include font_formatting($bodycopy,35px, bold, $primary);
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .food_name{
+    @include font_formatting($bodycopy,20px,bold,$primary);
+  }
+
+  .line{
+    border:1px solid $secondary;
+    width: 100%;
+    margin: auto;
+  }
+
+  .line2{
+    border:1px solid $secondary;
+    width: 93%;
+    margin: auto;
+  }
+
+  .food_description{
+    @include font_formatting($bodycopy, 18px, 300, $secondary);
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .menu_header{
+    margin-left: 3.5%;
+    margin-bottom: 5px;
+  }
+
+  .food_details{
+    margin: 10px 0;
+  }
+
+  .burger_menu{
+    display: none;
+  }
+
+  .cartIconMob, .bellIconMob{
+    display:none;
+  }
 
 
-.food_item{
-  padding: 40px;
-}
 
-.food_price{
-  text-align: right;
-  @include font_formatting($bodycopy,18px,bold,$secondary);
-}
 
-.food_menu_name{
-  @include font_formatting($bodycopy,60px,bold,$primary);
-  line-height: 75px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 60px 0 0 0;
-}
 
-.food_category{
-  @include font_formatting($bodycopy,40px, bold, $primary);
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.food_name{
-  @include font_formatting($bodycopy,23px,bold,$primary);
-}
-
-.line{
-  border:1px solid $secondary;
-  width: 100%;
-  margin: auto;
-}
-
-.line2{
-  border:1px solid $secondary;
-  width: 93%;
-  margin: auto;
-}
-
-.food_description{
-  @include font_formatting($bodycopy, 18px, 300, $secondary);
-  text-align: left;
-  margin-top: 5px;
-}
-
-.menu_header{
-  margin-left: 40px;
-  margin-bottom: 10px;
-}
-
-.food_details{
-  margin: 10px 0;
-}
-
-.review_order_button{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: $bodycopy;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: $secondary;
-  color: $background;
-  display:inline-block;
-  border: none;
-  padding: 12px 28px;
-}
-
-.button_div{
-  position: relative;
-  height: 200px;
 }

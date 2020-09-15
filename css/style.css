@@ -53,20 +53,28 @@ body {
 
 .horiTOQ {
   width: auto;
-  height: 111px;
+  height: 90px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.cartIcon {
+.TOQLogo {
   width: auto;
-  height: 70px;
-  margin-left: 50%; }
+  height: 145px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
-.bellIcon {
+.cartIcon, .bellIcon {
   width: auto;
-  height: 70px; }
+  height: 40px; }
+
+.bellIconMob, .cartIconMob {
+  width: auto;
+  height: 30px;
+  padding: 0 10px; }
 
 .food_image {
   width: 100%;
@@ -74,7 +82,7 @@ body {
 
 .allergen_key {
   width: auto;
-  height: 173px;
+  height: 120px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,17 +90,14 @@ body {
 
 .diet_logo {
   width: auto;
-  height: 20px; }
+  height: 25px; }
 
-@media screen and (max-width: 375px) {
-  .col-4 {
-    width: 100%; }
+.allergenTab {
+  display: none; }
 
-  .col-12 {
-    width: 100%; }
+.allergenMob {
+  display: none; }
 
-  body {
-    width: 100vw; } }
 .bannerDiv {
   background: #ED1C24;
   width: 100%;
@@ -111,19 +116,16 @@ body {
   font-family: 'brandon-grotesque', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 35px;
   color: white; }
 
 .top_nav_list {
-  padding-left: 20px;
   margin-top: 35px;
   list-style: none;
-  text-align: center; }
-
-.top_nav_link {
-  text-decoration: none;
-  color: white; }
+  text-align: center;
+  display: inline-block;
+  margin-left: 40px; }
 
 .top_nav a:hover {
   color: #ED1C24; }
@@ -159,65 +161,6 @@ body {
   text-align: center;
   padding-top: 10px; }
 
-.food_item {
-  padding: 40px; }
-
-.food_price {
-  text-align: right;
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #253F8E; }
-
-.food_menu_name {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 60px;
-  font-weight: bold;
-  color: #ED1C24;
-  line-height: 75px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 60px 0 0 0; }
-
-.food_category {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  color: #ED1C24;
-  text-transform: uppercase;
-  text-align: left; }
-
-.food_name {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 23px;
-  font-weight: bold;
-  color: #ED1C24; }
-
-.line {
-  border: 1px solid #253F8E;
-  width: 100%;
-  margin: auto; }
-
-.line2 {
-  border: 1px solid #253F8E;
-  width: 93%;
-  margin: auto; }
-
-.food_description {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #253F8E;
-  text-align: left;
-  margin-top: 5px; }
-
-.menu_header {
-  margin-left: 40px;
-  margin-bottom: 10px; }
-
-.food_details {
-  margin: 10px 0; }
-
 .review_order_button {
   position: absolute;
   left: 50%;
@@ -238,5 +181,240 @@ body {
 .button_div {
   position: relative;
   height: 200px; }
+
+@media screen and (min-width: 760px) {
+  .TOQLogo {
+    display: none; }
+
+  .allergenMob {
+    display: none; }
+
+  .allergenTab {
+    position: relative;
+    height: 160px; }
+
+  .food_item {
+    padding: 30px; }
+
+  .food_price {
+    text-align: right;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #253F8E; }
+
+  .food_menu_name {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ED1C24;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0; }
+
+  .food_category {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ED1C24;
+    text-transform: uppercase;
+    text-align: left; }
+
+  .food_name {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ED1C24; }
+
+  .line {
+    border: 1px solid #253F8E;
+    width: 100%;
+    margin: auto; }
+
+  .line2 {
+    border: 1px solid #253F8E;
+    width: 93%;
+    margin: auto; }
+
+  .food_description {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #253F8E;
+    text-align: left;
+    margin-top: 5px; }
+
+  .menu_header {
+    margin-left: 3.5%;
+    margin-bottom: 5px; }
+
+  .food_details {
+    margin: 10px 0; }
+
+  .burger_menu {
+    display: none; }
+
+  .cartIconMob, .bellIconMob {
+    display: none; } }
+@media screen and (min-width: 320px) and (max-width: 426px) {
+  .col-4 {
+    width: 100%; }
+
+  .col-12 {
+    width: 100%; }
+
+  body {
+    width: 100vw; }
+
+  .bannerDiv {
+    background: #ED1C24;
+    width: 100%;
+    height: 165px;
+    position: relative; }
+
+  .horiTOQ {
+    display: none; }
+
+  .top_nav {
+    display: none; }
+
+  .top_nav.active {
+    background: #253F8E;
+    width: 100%;
+    height: 300px;
+    font-family: 'brandon-grotesque', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+    display: block; }
+
+  .top_nav_container {
+    width: 100%;
+    height: 300px;
+    background-color: #253F8E; }
+
+  .top_nav_list {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 20px; }
+
+  .allergenTab {
+    display: none; }
+
+  .food_item {
+    padding: 40px; }
+
+  .food_price {
+    text-align: right;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #253F8E; }
+
+  .food_menu_name {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ED1C24;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0; }
+
+  .food_category {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ED1C24;
+    text-transform: uppercase;
+    text-align: center; }
+
+  .food_name {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ED1C24; }
+
+  .line {
+    border: 1px solid #253F8E;
+    width: 100%;
+    margin: auto; }
+
+  .line2 {
+    border: 1px solid #253F8E;
+    width: 93%;
+    margin: auto; }
+
+  .food_description {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #253F8E;
+    text-align: left;
+    margin-top: 5px; }
+
+  .menu_header {
+    margin-left: 3.5%;
+    margin-bottom: 5px; }
+
+  .food_details {
+    margin: 10px 0; }
+
+  .review_order_button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #253F8E;
+    color: #F9F9F9;
+    display: inline-block;
+    border: none;
+    padding: 12px 28px; }
+
+  .button_div {
+    position: relative;
+    height: 200px; }
+
+  .mobile_nav {
+    width: 100%;
+    height: 50px;
+    background-color: #253F8E; }
+
+  .mobile_nav::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+  .burger_menu {
+    display: inline-block;
+    padding: 10px;
+    float: left; }
+
+  .line3 {
+    background-color: #F9F9F9;
+    width: 20px;
+    height: 3px;
+    margin: 5px; }
+
+  .bellIcon, .cartIcon {
+    display: none; }
+
+  .bannerIconsMob {
+    width: 40%;
+    padding: 10px 10px;
+    padding-left: 50px;
+    float: right; } }
 
 /*# sourceMappingURL=style.css.map */

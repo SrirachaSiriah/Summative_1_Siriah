@@ -3,28 +3,38 @@
 //--------------------------------------------------------------
 
 .horiTOQ{
-  @include w-h(auto, 111px);
+  @include w-h(auto, 90px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
-.cartIcon{
-  @include w-h(auto, 70px);
-  margin-left: 50%;
+.TOQLogo{
+  @include w-h(auto,145px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-.bellIcon{
-  @include w-h(auto, 70px);
+.cartIcon, .bellIcon{
+  @include w-h(auto, 40px);
+  // margin-left: 50%;
 }
+
+.bellIconMob, .cartIconMob{
+  @include w-h(auto, 30px);
+  padding: 0 10px;
+}
+
 
 .food_image{
   @include w-h(100%, auto);
 }
 
 .allergen_key{
-  @include w-h(auto, 173px);
+  @include w-h(auto, 120px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,5 +42,5 @@
 }
 
 .diet_logo{
-  @include w-h(auto, 20px);
+  @include w-h(auto, 25px);
 }

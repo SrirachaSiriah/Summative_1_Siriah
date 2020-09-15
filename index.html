@@ -18,53 +18,77 @@
   </head>
     <body>
 
-      <!-------------------------------------------------------------->
-      <!-- Banner  -->
+<!-------------------------------------------------------------->
+<!-- Banner  -->
 
       <div class="bannerDiv col-12">
           <img class="horiTOQ" src="images/toq-tag-horizontal.png" alt="horizontalTOQ">
+          <img class="TOQLogo" src="images/toq-logo.png" alt="horizontalTOQ">
+
       </div>
 
-      <!-------------------------------------------------------------->
-      <!-- Navigation Menu -->
+      <div class="mobile_nav">
+          <!-- Burger Menu -->
+            <div class="burger_menu">
+              <div class="line3"></div>
+              <div class="line3"></div>
+              <div class="line3"></div>
+            </div>
+
+          <div class="bannerIconsMob">
+            <img class="cartIconMob" src="images/Cart.png" alt="Cart">
+            <img class="bellIconMob" src="images/Assistance_Bell.png" alt="Cart">
+          </div>
+      </div>
+
+
+<!-------------------------------------------------------------->
+<!-- Tablet Navigation Menu -->
 
         <nav class="top_nav col-12">
 
           <ul class="top_nav_container row">
-            <li id="entrees" class="top_nav_list col col-2"> Entrees </li>
-            <li id="mains" class="top_nav_list col col-2"> Mains </li>
-            <li id="drinks" class="top_nav_list col col-2"> Drinks </li>
-            <li id="specials" class="top_nav_list col col-2"> Specials </li>
-            <li id="cart" class="top_nav_list col col-2"> <img class="cartIcon" src="images/Cart.png" alt="Cart"> </li>
-            <li class="top_nav_list col col-2"> <img class="bellIcon" src="images/Assistance_Bell.png" alt="Cart"> </li>
+            <li id="entrees" class="top_nav_list "> Entrees </li>
+            <li id="mains" class="top_nav_list "> Mains </li>
+            <li id="drinks" class="top_nav_list "> Drinks </li>
+            <li id="specials" class="top_nav_list "> Specials </li>
+            <li id="cart" class="top_nav_list"> <img class="cartIcon" src="images/Cart.png" alt="Cart"> </li>
+            <li class="top_nav_list"> <img class="bellIcon" src="images/Assistance_Bell.png" alt="Cart"> </li>
           </ul>
 
         </nav>
+
+
+
+<!------------------------------------------------------------------------------>
+<!--Allergen Key Image-->
+
+  <div class="allergenTab">
+    <img class="allergen_key" src="images/allergenkey.svg" alt="Allergen Key">
+  </div>
+
+  <div class="allergenMob">
+    <img class="allergen_key_mobile" src="images/allergenkeymobile.svg" alt="Allergen Key">
+  </div>
 
 <!------------------------------------------------------------------------------>
 <!-- Entrees Page -->
 
 <section class="entrees">
 
+<!------------------------------------------------------------------------------>
 <div class="entreesPage">
 
-<!------------------------------------------------------------------------------>
-<!--Allergen Key Image-->
 
-    <div class="allergenDiv">
-      <img class="allergen_key" src="images/allergenkey.svg" alt="Allergen Key">
-    </div>
-
-<!------------------------------------------------------------------------------>
 <!-- Entrees Header + Bao Bun header -->
 
-    <header class="food_menu_name"> Entrees </header>
+<header class="food_menu_name"> Entrees </header>
 
-    <div class="menu_header">
-      <h3 class="food_category">Bao Buns</h3>
-    </div>
+  <div class="menu_header">
+    <h3 class="food_category">Bao Buns</h3>
+  </div>
 
-    <div class="line2"></div>
+<div class="line2"></div>
 
 <!------------------------------------------------------------------------------>
 <!-- first row starts here -->
@@ -658,7 +682,7 @@
 
 <!------------------------------------------------------------------------------>
 <!-- Review Order Button -->
-<div class="button_div">
+<div id="order" class="button_div">
 <button class="review_order_button">Review your order</button>
 </div>
 
@@ -674,7 +698,64 @@
 
 <section class="mains">
 
-  <header> Mains </header>
+
+  <header class="food_menu_name"> Mains </header>
+
+  <div class="menu_header">
+    <h3 class="food_category"> Curries </h3>
+  </div>
+
+  <div class="line2"></div>
+
+<!------------------------------------------------------------------------------>
+<!-- first row starts here -->
+
+<div class="row">
+
+<!------------------------------------------------------------------------------>
+
+<!-- Grandmas Beef Curry -->
+
+    <div class="food_item col col-4">
+
+      <img class="food_image" src="images/placeholder.svg" alt="Food">
+
+        <h1 class="food_name">Grandma's Beef Curry</h1>
+
+            <div class="row food_details">
+
+                <div class="dietary_ind col col-6">
+                  <img class="diet_logo" src="images/DF.svg" alt="Dairy Free">
+                  <img class="diet_logo" src="images/GF.svg" alt="Gluten Free">
+                </div>
+
+                <div class="dietary_ind col col-6">
+                  <h2 class="food_price">$21.00</h2>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="food_description">
+              <p>Slow cooked beef, coriander, ginger,
+                crushed peanuts, garlic, chilli, lemongrass
+                & kaffir lime leaves.</p>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </section>
 
@@ -682,15 +763,14 @@
 
 <section class="drinks">
 
-  <header> Drinks </header>
-
+  <header class="food_menu_name"> Drinks </header>
 </section>
 
 <!------------------------------------------------------------------------------>
 
 <section class="specials">
 
-  <header> Specials </header>
+  <header class="food_menu_name"> Specials </header>
 
 </section>
 
@@ -698,9 +778,38 @@
 
 <section class="cart">
 
-  <header> Cart </header>
+  <header class="food_menu_name"> Your Order </header>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!------------------------------------------------------------------------------>
 <!-- Footer -->
