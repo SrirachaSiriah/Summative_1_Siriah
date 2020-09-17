@@ -121,22 +121,16 @@ body {
   color: white; }
 
 .top_nav_list {
-  margin-top: 35px;
+  line-height: 105px;
   list-style: none;
   text-align: center;
   display: inline-block;
   margin-left: 40px; }
 
-.top_nav a:hover {
-  color: #ED1C24; }
-
-.top_nav_list:nth-child(5) {
-  margin-top: 17.5px;
-  padding: 0; }
-
-.top_nav_list:nth-child(6) {
-  margin-top: 17.5px;
-  padding: 0; }
+.top_nav_icon {
+  float: right;
+  list-style: none;
+  margin: 32.5px 40px 0 0; }
 
 .footer_div {
   background: #253F8E;
@@ -416,5 +410,100 @@ body {
     padding: 10px 10px;
     padding-left: 50px;
     float: right; } }
+.add_item_display {
+  background-color: rgba(37, 63, 124, 0.3);
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+.white_box {
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  background-color: #F9F9F9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.close_white_box {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px; }
+
+.fa-times {
+  color: #253F8E;
+  font-size: 40px; }
+
+.food_item_added {
+  width: 40%;
+  height: 40%;
+  margin: 10% 30% 25% 30%; }
+
+.special_instructions {
+  width: 70%;
+  height: 20%;
+  margin-top: 15%;
+  margin-left: 15%; }
+
+.instructions_header {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ED1C24;
+  margin-bottom: 5px; }
+
+.instructions_text {
+  height: 70%;
+  width: 100%;
+  color: #253F8E;
+  background-color: #D3D3D3;
+  border: none;
+  outline: none;
+  padding: 10px;
+  resize: none; }
+
+.item_footer {
+  position: absolute;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #253F8E; }
+
+.fa-minus-circle, .fa-plus-circle {
+  font-size: 40px;
+  line-height: 50px;
+  color: #F9F9F9; }
+
+.order_add {
+  width: 50%;
+  height: 40px;
+  margin: 25px;
+  background-color: #F9F9F9;
+  float: right; }
+
+.add_order_text {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ED1C24;
+  text-align: center;
+  line-height: 40px; }
+
+.amount_number {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #F9F9F9; }
+
+.plus_minus_container {
+  width: 30%;
+  height: 90px;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
