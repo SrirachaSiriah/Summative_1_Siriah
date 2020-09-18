@@ -98,6 +98,21 @@ body {
 .allergenMob {
   display: none; }
 
+#items, #price {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ED1C24;
+  text-align: center;
+  text-transform: uppercase; }
+
+.item_list, .price_list {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #253F8E;
+  padding-left: 150px; }
+
 .bannerDiv {
   background: #ED1C24;
   width: 100%;
@@ -136,7 +151,8 @@ body {
   background: #253F8E;
   width: 100%;
   height: 100px;
-  position: relative; }
+  position: sticky;
+  bottom: 0; }
 
 .fa-arrow-alt-circle-up {
   color: #F9F9F9;

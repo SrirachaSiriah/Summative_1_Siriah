@@ -45,7 +45,9 @@
   background: $secondary;
   width: 100%;
   height: 100px;
-  position: relative;
+  position: sticky;
+  bottom: 0;
+  
 }
 
 .fa-arrow-alt-circle-up{

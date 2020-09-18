@@ -5,3 +5,14 @@
 .allergenMob{
   display: none;
 }
+
+#items, #price{
+  @include font_formatting($bodycopy, 30px, bold, $primary);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item_list, .price_list{
+  @include font_formatting($bodycopy, 20px, bold, $secondary);
+  padding-left: 150px;
+}

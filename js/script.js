@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 //Click to go to each tab
 
   $('.entrees').show();
@@ -72,6 +71,31 @@ $(document).ready(function(){
     $('.drinks').hide();
     $('.specials').hide();
     $('.cart').hide();
+
+
+    var myIndex = $('.food_image').index(this);
+    console.log(myIndex);
+    var foodImage = document.getElementsByClassName('food_image');
+    console.log(foodImage);
+    var foodName = document.getElementsByClassName('food_name');
+    console.log(foodName);
+    var foodPrice = document.getElementsByClassName('food_price');
+    console.log(foodPrice);
+
+    for (var i=0; i<foodPrice.length; i++){
+
+      if (myIndex == i){
+        console.log(foodName[i].innerHTML);
+        console.log(foodPrice[i].innerHTML);
+        console.log(typeof(foodImage[i]));
+        var name = foodName[i].innerHTML;
+        var price = foodPrice[i].innerHTML;
+        $('.white_box .food_name').text(name );
+        $('.white_box .food_price').text(price);
+        $('.white_box .modal_food_name').prepend(foodImage[i] );
+      }
+
+    }
   });
 
   $('.close_white_box').click(function(){
@@ -100,36 +124,56 @@ $(document).ready(function(){
     $('.cart').show();
   });
 //
+  //
+  $('.add_order_text').on('click', function(){
 
-  $('.food_image').on('click', function(){
-     console.log(this.id);
-    var itemName = this.id //stogin the value to a variable
-    $('#cartFoodName').append ('<br>' + itemName);
-
-
-    // console.log($('.menu-button').index(this));
-    var myIndex = $('.food_image').index(this);
+    var myIndex = $('.add_order_text').index(this);
     console.log(myIndex);
 
-    // var itemPrice = document.getElementsByClassName('item-price');
-    // console.log(itemPrice);
-    //
-    // for (var i=0; i<itemPrice.length; i++){
-    //
-    //   if (myIndex == i){
-    //     console.log(itemPrice[i].innerHTML);
-    //     var price = itemPrice[i].innerHTML;
-    //     $('#price').append ('<br>' + price);
-    //   }
+    var foodName = document.getElementsByClassName('modal_food_name');
+    console.log(foodName);
+    var modalPrice = document.getElementsByClassName('modal_food_price');
+    console.log(modalPrice);
 
-    // }
+    for (var i=0; i<modalPrice.length; i++){
+
+      if (myIndex == i){
+        console.log(foodName[i].innerHTML);
+        console.log(modalPrice[i].innerHTML);
+        var name = foodName[i].innerHTML;
+        var price = modalPrice[i].innerHTML;
+        $('.item_list').append ( name + '<br>');
+        $('.price_list').append ( price + '<br>');
+      }
+
+    }
 
   });
 
-  $('.order_add').on('click', function(){
-    var myIndex = $('.food_image').index(this);
-    $('#items').append ('<br>' + itemName);
-
-  });
+  // $('.food_image').on('click', function(){
+  //
+  //   var myIndex = $('.food_image').index(this);
+  //   console.log(myIndex);
+  //
+  //   var foodName = document.getElementsByClassName('food_name');
+  //   console.log(foodName);
+  //   var foodPrice = document.getElementsByClassName('food_price');
+  //   console.log(foodPrice);
+  //
+  //   for (var i=0; i<foodPrice.length; i++){
+  //
+  //     if (myIndex == i){
+  //       console.log(foodName[i].innerHTML);
+  //       console.log(foodPrice[i].innerHTML);
+  //       var name = foodName[i].innerHTML;
+  //       var price = foodPrice[i].innerHTML;
+  //       $('.white_box .food_name').text(name );
+  //       $('.white_box .food_price').text(price);
+  //     }
+  //
+  //   }
+  //
+  // });
+  //
 
 });
