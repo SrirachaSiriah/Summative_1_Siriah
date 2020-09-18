@@ -30,7 +30,7 @@
 
 
 .food_image{
-  @include w-h(100%, auto);
+  @include w-h(250px, 250px);
 }
 
 .allergen_key{

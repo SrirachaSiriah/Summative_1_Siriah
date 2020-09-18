@@ -77,8 +77,8 @@ body {
   padding: 0 10px; }
 
 .food_image {
-  width: 100%;
-  height: auto; }
+  width: 250px;
+  height: 250px; }
 
 .allergen_key {
   width: auto;
