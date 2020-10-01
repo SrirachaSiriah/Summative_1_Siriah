@@ -1,10 +1,10 @@
-.allergenTab{
-  display: none;
-}
+// .allergenTab{
+//   display: none;
+// }
 
-.allergenMob{
-  display: none;
-}
+// .allergenMob{
+//   display: none;
+// }
 
 #items, #price{
   @include font_formatting($bodycopy, 30px, bold, $primary);

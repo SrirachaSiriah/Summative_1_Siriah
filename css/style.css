@@ -92,12 +92,6 @@ body {
   width: auto;
   height: 25px; }
 
-.allergenTab {
-  display: none; }
-
-.allergenMob {
-  display: none; }
-
 #items, #price {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 30px;
